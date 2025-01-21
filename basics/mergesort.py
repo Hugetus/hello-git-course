@@ -1,5 +1,6 @@
 
 def debug_print(debug_msg=None, **kwargs):
+
     if debug_msg:
         print(debug_msg)
 
@@ -44,10 +45,12 @@ def merge(left, right):
 if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
     
-    
-    input_list = [int(x.strip()) for x in input_str.split(',')]  
+@@ -23,3 +57,6 @@ if __name__ == "__main__":
+            quit(1)
 
-    debug_print(input_list=input_list)  
+    debug_print(value_list=value_list)
 
-    sorted_list = mergesort(input_list)
+    sorted_list = mergesort(value_list)
     print(sorted_list)
+
+
