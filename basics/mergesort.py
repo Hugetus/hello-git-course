@@ -45,10 +45,9 @@ if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
     
     
-    value_list = [int(x.strip()) for x in input_str.split(',')]
+    input_list = [int(x.strip()) for x in input_str.split(',')]  
 
-   
-    debug_print(value_list=value_list)
+    debug_print(input_list=input_list)  
 
-    sorted_list = mergesort(value_list)
+    sorted_list = mergesort(input_list)
     print(sorted_list)
